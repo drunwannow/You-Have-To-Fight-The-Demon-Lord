@@ -226,7 +226,6 @@ function addMultipliers() {
         task.xpMultipliers.push(getBindedTaskEffect("Demon training"))
 
         if (task instanceof Job) {
-            task.incomeMultipliers.push(task.getLevelMultiplier.bind(task))
             task.incomeMultipliers.push(getBindedTaskEffect("Demon's wealth"))
             task.xpMultipliers.push(getBindedTaskEffect("Productivity"))
             task.xpMultipliers.push(getBindedItemEffect("Personal squire"))    
@@ -241,13 +240,14 @@ function addMultipliers() {
             task.incomeMultipliers.push(getBindedTaskEffect("Strength"))
             task.xpMultipliers.push(getBindedTaskEffect("Battle tactics"))
             task.xpMultipliers.push(getBindedItemEffect("Steel longsword"))
+        } else if (jobCategories["The Arcane Association"].includes(task.name)) {
+				task.incomeMultipliers.push(task.getLevelMultiplier.bind(task))            
+            task.xpMultipliers.push(getBindedTaskEffect("Mana control"))
         } else if (task.name == "Strength") {
             task.xpMultipliers.push(getBindedTaskEffect("Muscle memory"))
             task.xpMultipliers.push(getBindedItemEffect("Dumbbells"))
         } else if (skillCategories["Magic"].includes(task.name)) {
             task.xpMultipliers.push(getBindedItemEffect("Sapphire charm"))
-        } else if (jobCategories["The Arcane Association"].includes(task.name)) {
-            task.xpMultipliers.push(getBindedTaskEffect("Mana control"))
         } else if (skillCategories["Dark magic"].includes(task.name)) {
             task.xpMultipliers.push(getEvil)
         }
