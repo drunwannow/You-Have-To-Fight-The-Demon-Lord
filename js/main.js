@@ -839,7 +839,8 @@ function getElementsByClass(className) {
 
 function setLightDarkMode() {
     var body = document.getElementById("body")
-    body.classList.contains("dark") ? body.classList.remove("dark") : body.classList.add("dark")
+    body.className = ''
+    body.classList.add(theme.value)
 }
 
 function removeSpaces(string) {
