@@ -1,5 +1,5 @@
 .dark {
-    background-color: rgb(32, 32, 32)
+    background-color: rgb(32, 32, 32);
     color: white
 }
 
@@ -26,7 +26,7 @@
 }
 
 .dark .item-button {
-    background-color: white;
+    background-color: white
 }
 
 .dark .item-button:hover {
@@ -35,7 +35,7 @@
 
 .dark .tooltip .tooltipText {
     background-color: black;
-    color: #fff;
+    color: #fff
 }
 
 .dark .slider {
