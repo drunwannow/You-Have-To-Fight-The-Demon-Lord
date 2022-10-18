@@ -8,7 +8,7 @@
 }
 
 .dark .progress-text {
-    color: white
+    color: black !important
 }
 
 .dark .progress-bar {
