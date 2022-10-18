@@ -1,0 +1,55 @@
+.dark {
+    background-color: rgb(32, 32, 32)
+    color: white
+}
+
+.dark .current {
+    background-color: orange !important
+}
+
+.dark .progress-text {
+    color: white
+}
+
+.dark .progress-bar {
+    background-color: rgb(12, 101, 173)
+}
+
+.dark .progress-fill {
+    background-color: rgb(46, 148, 231)
+}
+
+.dark .button {
+    background-color: rgb(31, 31, 31);
+    border-color: white !important;
+    color: white !important
+}
+
+.dark .item-button {
+    background-color: white;
+}
+
+.dark .item-button:hover {
+    background-color: rgb(192, 192, 192)
+}
+
+.dark .tooltip .tooltipText {
+    background-color: black;
+    color: #fff;
+}
+
+.dark .slider {
+    background: #d3d3d3
+}
+
+.dark .slider::-webkit-slider-thumb {
+    background: #4CAF50
+}
+
+.dark .slider::-moz-range-thumb {
+    background: #4CAF50
+}
+
+.dark .panel {
+    background-color: white
+}
